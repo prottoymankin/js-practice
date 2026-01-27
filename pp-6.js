@@ -7,9 +7,9 @@ Find the largest number using a loop
 let prices = [120, 80, 200, 50, 300];
 let largestNumber = prices[0];
 
-for (const price of prices) {
-    if (largestNumber < price) {
-        largestNumber = price;
+for (let i = 1; i < prices.length; i++) {
+    if (largestNumber < prices[i]) {
+        largestNumber = prices[i];
     }
 }
 
